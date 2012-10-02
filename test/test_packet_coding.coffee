@@ -27,3 +27,14 @@ describe "Packet encoding/decoding", ->
   
   it "should code string", ->
     code string, "writeString", "readString" for string in ["", "hello"]
+    
+  it "should not read a string past the null char", ->
+    
+    buffer = new Buffer 5000
+    packet = reset buffer
+    
+    packet.enc.writeString "hello"
+    packet.enc.writeString "world"
+    
+    assert.equal packet.dec.readString(), "hello"
+    assert.equal packet.dec.readString(), "world"
