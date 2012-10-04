@@ -1,0 +1,27 @@
+{
+  "name": "cube2",
+  "description": "communicate with cube2 game servers",
+  "version": "0.1.0",
+  "maintainers": [
+    {
+      "name": "Graham Daws",
+      "email": "graham.daws@gmail.com"
+    }
+  ],
+  "keywords": [
+  ],
+  "dependencies": {
+    "underscore":">=1.2.3",
+    "mocha": ">=1.5.0"
+  },
+  "licenses":[
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "repository":{
+    "type":"git",
+    "url": "https://gdaws@github.com/gdaws/node-cube2.git"
+  }
+}
