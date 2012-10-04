@@ -24,5 +24,8 @@
   "repository":{
     "type":"git",
     "url": "https://gdaws@github.com/gdaws/node-cube2.git"
+  },
+  "scripts":{
+    "test":"mocha -u bdd --compilers coffee:coffee-script test"
   }
 }
