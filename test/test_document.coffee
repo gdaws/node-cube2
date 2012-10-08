@@ -196,3 +196,13 @@ describe "Document", ->
       a: 3
       b: 4
   
+  it "should not emit a change event", ->
+    
+    document.set
+      a: 1
+    
+    document.on "change", ->
+      assert(false, "this should not have been reachable")
+    
+    document.set
+      a: 1
