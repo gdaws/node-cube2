@@ -1,8 +1,6 @@
 assert = require "assert"
-packet_coding = require "../lib/gameserver/packet_coding"
-
-PacketEncoder = packet_coding.PacketEncoder
-PacketDecoder = packet_coding.PacketDecoder
+PacketEncoder = require "../lib/gameserver/PacketEncoder"
+PacketDecoder = require "../lib/gameserver/PacketDecoder"
 
 reset = (buffer) ->
   enc: new PacketEncoder(buffer)
