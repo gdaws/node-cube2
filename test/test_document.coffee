@@ -1,5 +1,5 @@
 assert = require "assert"
-Document = require "../lib/utils/document"
+Document = require "../lib/utils/Document"
 
 describe "Document", ->
 
